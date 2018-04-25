@@ -1,0 +1,87 @@
+<!--
+  Generated template for the FloodDescriptionPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar >
+      <ion-title>Description</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding class="card-background">
+    <ion-card>
+        <ion-item style="background:rgb(226, 229, 229)">
+               <ion-label item-start [ngStyle]="{'color': 'Blue', 'font-size': '20px', 'font-weight': 'bold'}"> <b>Region </b></ion-label> 
+                <!-- <ion-input item-end type="search" [(ngModel)]="selectedName"  placeholder="" [ngStyle]="{'color': 'Black', 'font-size': '20px', background:'rgb(226, 229, 229)'}"></ion-input> -->
+        </ion-item>
+        <ion-item>
+            <ion-label item-start [ngStyle]="{'color': 'Black', 'font-size': '20px', 'font-weight': 'bold'}"> <b> Address</b></ion-label> 
+             <ion-input item-end type="search" [(ngModel)]="address"  placeholder="" [ngStyle]="{'color': 'Black', 'font-size': '20px', background:'rgb(226, 229, 229)'}"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label item-start [ngStyle]="{'color': 'Black', 'font-size': '20px', 'font-weight': 'bold'}"> <b> Neighbourhood</b></ion-label> 
+             <ion-input item-end type="search" [(ngModel)]="neighbourhood"  placeholder="" [ngStyle]="{'color': 'Black', 'font-size': '20px', background:'rgb(226, 229, 229)'}"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label item-start [ngStyle]="{'color': 'Black', 'font-size': '20px', 'font-weight': 'bold'}"> <b> Council District</b></ion-label> 
+             <ion-input item-end type="search" [(ngModel)]="district"  placeholder="" [ngStyle]="{'color': 'Black', 'font-size': '20px', background:'rgb(226, 229, 229)'}"></ion-input>
+        </ion-item>
+        </ion-card>
+        <ion-card>
+            <ion-item style="background:rgb(226, 229, 229)">
+                <ion-label item-start [ngStyle]="{'color': 'Blue', 'font-size': '20px', 'font-weight': 'bold'}"> <b>Status </b></ion-label> 
+         </ion-item>
+    <ion-item>
+              <ion-label item-start [ngStyle]="{'color': 'Black', 'font-size': '20px', 'font-weight': 'bold'}"> <b>Current Status</b></ion-label>         
+           <ion-input item-end type="search"   placeholder="" [ngStyle]="{'color': 'Black', 'font-size': '20px', background:'rgb(226, 229, 229)'}"></ion-input>
+       </ion-item>
+   
+       <ion-item>
+           <ion-label item-start [ngStyle]="{'color': 'Black', 'font-size': '20px', 'font-weight': 'bold'}"> <b>Last Update  </b></ion-label> 
+            <ion-input item-end type="search" [(ngModel)]="selectedAddress"  placeholder="" [ngStyle]="{'color': 'Black', 'font-size': '20px', background:'rgb(226, 229, 229)'}"></ion-input>
+        </ion-item>
+        </ion-card>
+
+        <ion-card>
+            <ion-item style="background:rgb(226, 229, 229)">
+                <ion-label [ngStyle]="{'color': 'Blue', 'font-size': '20px', 'width':'100px', 'font-weight': 'bold'}"> <b>Height And Precipitation </b></ion-label> 
+         </ion-item>
+        <ion-item>
+          <ion-label [ngStyle]="{'color': 'Black', 'font-size': '20px', 'font-weight': 'bold'}" ><b>Height</b></ion-label>
+          <ion-input item-end type="search"[(ngModel)]="height" placeholder="" [ngStyle]="{'color': 'Black', 'font-size': '20px', background:'rgb(226, 229, 229)'}"></ion-input>
+      </ion-item>
+
+      <ion-item>
+           <ion-label  [ngStyle]="{'color': 'Black', 'font-size': '20px', 'font-weight': 'bold'}"> <b>Precipitation</b></ion-label> 
+            <ion-input item-end type="precipation " [(ngModel)]="selectedAmbName"  placeholder="" [ngStyle]="{'color': 'Black', 'font-size': '20px', background:'rgb(226, 229, 229)'}"></ion-input>
+    </ion-item> 
+
+    </ion-card>
+    
+    
+    <ion-card>
+        <ion-item style="background:rgb(226, 229, 229)">
+            <ion-label item-start [ngStyle]="{'color': 'Blue', 'font-size': '20px', 'font-weight': 'bold'}"> <b>Description </b></ion-label> 
+     </ion-item>
+
+  <ion-item>
+      <ion-label [ngStyle]="{'color': 'Black', 'font-size': '20px', 'font-weight': 'bold'}"> <b> Request Type </b></ion-label> 
+       <ion-input item-end type="search" [(ngModel)]="selectedAmbOccu"  placeholder="" [ngStyle]="{'color': 'Black', 'font-size': '20px', background:'rgb(226, 229, 229)'}"></ion-input>
+  </ion-item>  
+
+  <ion-item>
+      <ion-label [ngStyle]="{'color': 'Black', 'font-size': '20px', 'font-weight': 'bold'}"> <b> Description</b></ion-label> 
+       <ion-input item-end type="search" [(ngModel)]="selectedAmbDesc"  placeholder="" [ngStyle]="{'color': 'Black', 'font-size': '20px', background:'rgb(226, 229, 229)'}"></ion-input>
+</ion-item>  
+  </ion-card>
+    
+  
+  </ion-content>
+  
+

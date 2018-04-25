@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar id="card-background">
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding="true " class="card-background item item-divider center-text">
+  
+<ion-card-content>
+  <ion-list [ngStyle]="{'align-items': 'center', 'margin': 'auto'}">
+      <ion-item color="black">
+          <ion-label [ngStyle]="{'color': 'Black', 'font-size': '16px', 'font-weight': 'bold'}"> <b>Enter Pincode</b></ion-label> 
+           <ion-input item-end type="text" [(ngModel)]="selectedName"  placeholder="Enter Pin Code"></ion-input>
+  </ion-item>
+           
+  <ion-item>
+    <div>
+       <b>Select Alert Frequency</b>
+      <select [(ngModel)]="frequency" id="frequency" ng-change="">
+          <option value="noselection"></option>
+        <option value="fivemins">15 Minutes</option>
+        <option value="tenmins">10 Minutes</option>
+        <option value="fifteenmins">15 Minutes</option>
+        <option value="halfhour">30 Minutes</option>
+      </select>
+    </div>
+    </ion-item>
+      <ion-item>
+          <ion-label  [ngStyle]="{'color': 'Black', 'font-size': '16px', 'font-weight': 'bold'}"><b>Show Alerts</b></ion-label>
+          <ion-toggle [(ngModel)]="alertsToggle"></ion-toggle>
+        </ion-item>
+
+    
+    <button ion-button block outline color="light" [ngStyle]="{'color': 'Black', 'font-size': '20px', 'font-weight': 'bold','background-color' : '#659EC7'}" (click)="floodAlertNavigation()">Show Alerts</button>
+  </ion-list>
+
+</ion-card-content>
+
+
+</ion-content>
